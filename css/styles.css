@@ -1,0 +1,30 @@
+.navbar {
+    background-color: #000000;
+    height: 100px;
+  }
+
+  #navbarNavAltMarkup{
+  font-size: 20px;
+  background-color: #000000;
+  
+ } 
+
+
+ .nav-brand{
+  border-spacing: 100px;
+  /*padding-left: (10px);*/
+}
+
+a{
+  color: #fff01a !important;
+}
+
+
+.title {
+  margin-top: 130px;
+}
+ 
+.footer {
+    background-color: #000000;
+  }
+
