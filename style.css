@@ -535,3 +535,138 @@ footer .info a{
         margin-bottom: 10px;
     }
 }
+
+
+/*Inicio de sesion y registro*/
+
+.login-register {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+.login-register .form-container a {
+    text-decoration: underline;
+    color: #2E2E2E;
+}
+
+.login-register .form-container a:hover {
+    color: #f9e401;
+}
+
+.login-register .form-box {
+    max-width: 600px;
+}
+
+.login-register .nav-pills .nav-link.active {
+    background-color: #f9e401;
+    color: #000000;
+}
+
+.login-register .nav-pills .nav-link {
+    text-transform: unset;
+    font-size: 14px;
+}
+
+.login-register .btn-submit {
+    background-color: #f9e401;
+    border: 1px solid #f9e401;
+    box-shadow: none;
+    transition: .3s;
+    color: #000000;
+    text-transform: unset;
+    font-size: 14px;
+}
+
+.login-register .btn-submit:hover {
+    background-color: transparent;
+    color: #f9e401;
+}
+
+.login-register .form-check-input[type='checkbox']:checked {
+    background-color: #f9e401;
+    border-color: #f9e401;
+}
+
+.login-register .custom-btn1 {
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.login-register .custom-btn1:hover {
+    color: #f9e401;
+}
+
+.login-register .custom-sh-button,
+.login-register .custom-sh-button:active {
+    padding: 0 5px 0 0;
+    box-shadow: none;
+    font-size: 20px;
+}
+
+.login-register #login-pw,
+.login-register #register-pw {
+    padding-right: 50px;
+}
+
+.login-register .progress-bar,
+.login-register .pw-strength {
+    height: 5px;
+    border-radius: 5px;
+}
+
+.login-register .progress-bar {
+    background-color: #efefef;
+}
+
+.login-register .pw-strength {
+    transition: .3s;
+}
+
+.login-register .pw-strength.very-weak {
+    background-color: #FF0000;
+}
+
+.login-register .pw-strength.weak {
+    background-color: #FFCC33;
+}
+
+.login-register .pw-strength.good {
+    background-color: #66CC33;
+}
+
+.login-register .pw-policies {
+    display: none;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.login-register .pw-policies .fa-check {
+    color: #66CC33;
+    font-size: 16px;
+}
+
+.login-final {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .custom-btn1,
+.custom-btn1:active {
+    box-shadow: none !important;
+    border: none;
+    background: none;
+    padding: 0;
+    text-transform: none;
+    color: #2E2E2E;
+}
+
+.custom-btn1:hover {
+    box-shadow: none;
+    background-color: transparent;
+}
