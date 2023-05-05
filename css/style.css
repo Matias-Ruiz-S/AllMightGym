@@ -137,6 +137,7 @@ body{
 }
 .nosotros .fila .col{
     width: 50%;
+    padding-top: 100px;
 }
 .nosotros .fila .col img{
     width: 80%;
