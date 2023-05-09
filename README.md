@@ -1,9 +1,14 @@
-Para correr el servidor, se debe abrir una terminal desde la carpeta del repositorio e ingresar esto:
+## Hacer correr el servidor
 
-py manage.py runserver
+Para correr el servidor, se debe abrir una terminal desde la carpeta del repositorio e ingresar lo siguiente:
 
-Y despues abrir http://127.0.0.1:8000/
+```py manage.py runserver```
 
-Para detener el servidor, hay que apretar CTRL+C
+Despues abrir http://127.0.0.1:8000/ y listo.
 
-No hacer commits mientras corre el servidor!!!
+**Importante:** Evitar hacer commits mientras el servidor esta corriendo!!!
+
+## Detener el servidor
+
+Para detener el servidor, se debe presionar ```CTRL```+```C``` desde el terminal que se uso para correr el servidor
+
