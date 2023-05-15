@@ -35,49 +35,75 @@
 
     <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">
-        <div class="contenido-seccion">
-            <div class="info">
-                <h2>All Might <span class="txtAmarillo">GYM</span></h2>
-                <p>El gimnasio mas grande de la quinta región</p>
-                <a href="#inscripcion" class="btn-mas">
-                    <i class="fa-solid fa-circle-chevron-down"></i>
-                </a>
+    <div class="contenido-seccion">
+        <div class="row">
+        <div class="info col-md-6">
+            <h2>All Might <span class="txtAmarillo">GYM</span></h2>
+            <p>El gimnasio más grande de la quinta región</p>
+            <a href="#inscripcion" class="btn-mas btn-primary">
+            <i class="fa-solid fa-circle-chevron-down"></i>
+            </a>
+        </div>
+        <div class="opciones col-md-6">
+            <div class="opcion col-sm-6">
+                <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">FUNCIONAL</h5>
+                </div>
+                </div>
             </div>
-            <div class="opciones">
-                <div class="opcion">
-                    FUNCIONAL
+            <div class="opcion col-sm-6">
+                <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">POWER LIFTING</h5>
                 </div>
-                <div class="opcion">
-                    POWER LIFTING
                 </div>
-                <div class="opcion">
-                    ZUMBA
+            </div>
+            <div class="opcion col-sm-6">
+                <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">ZUMBA</h5>
                 </div>
-                <div class="opcion">
-                    BODY COMBAT
                 </div>
-                <div class="opcion">
-                    YOGA
+            </div>
+            <div class="opcion col-sm-6">
+                <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">BODY COMBAT</h5>
                 </div>
-                <div class="opcion">
-                    CYCLING IN DOOR
+                </div>
+            </div>
+            <div class="opcion col-sm-6">
+                <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">YOGA</h5>
+                </div>
+                </div>
+            </div>
+            <div class="opcion col-sm-6">
+                <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">CYCLING IN DOOR</h5>
+                </div>
                 </div>
             </div>
         </div>
+        </div>
+    </div>
     </section>
 
     <!-- SECCION NOSOTROS -->
     <section id="inscripcion" class="nosotros">
-        <div class="fila">
+        <div class="fila row">
             <div class="col">
                 <img src="{% static 'core/img/nosotros.png'%}" alt="">
             </div>
             <div class="col">
-                <div class="contenedor-titulo">
-                    <div class="numero">
+                <div class="contenedor-titulo row align-items-center">
+                    <div class="numero col-sm-2">
                         01
                     </div>
-                    <div class="info">
+                    <div class="info col-sm-10">
                         <span class="frase">LA MEJOR EXPERIENCIA CON NOSOTROS</span>
                         <h2>INSCRÍBETE YA</h2>
                     </div>
@@ -87,24 +113,24 @@
             </div>
         </div>
         <hr>
-        <div class="fila-nosotros">
-            <div class="col1">
+        <div class="fila-nosotros row">
+            <div class="col1 col-sm-6">
                 <span class="frase">
                     <span class="txtAmarillo">ENTRENA</span> DIFERENTE
                 </span>
                 <h2>INSCRÍBETE <span class="txtAmarillo">YA</span> HOY!</h2>
             </div>
-            <div class="col2">
+            <div class="col2 col-sm-6">
                 <a href="login"><button>PLAN LIBRE</button></a>
             </div>
         </div>
     </section>
 
     <!-- SECCION SERVICIOS -->
-    <section class="servicios" id="servicios">
-        <div class="contenido-seccion">
-            <div class="fila">
-                <div class="col">
+<!--    <section class="servicios" id="servicios">
+        <div class="contenido-seccion container">
+            <div class="fila row">
+                <div class="col col-md-6">
                     <div class="contenedor-titulo">
                         <div class="numero">
                             02
@@ -117,11 +143,12 @@
                     <p class="p-especial">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur necessitatibus quod provident libero, nam corrupti, adipisci ea inventore cum aliquid asperiores pariatur harum sunt. Tempore expedita atque quos ipsum nisi.</p>
                 </div>
-                <div class="col">
+                <div class="col col-md-6">
                     <img src="{% static 'core/img/fondo-servicios.jpg'%}" alt="">
                 </div>
             </div>
         </div>
+
         <div class="info-servicios">
             <table>
                 <tr>
@@ -161,11 +188,11 @@
             </table>
         </div>
     </section>
-
+-->
     <!-- SECCION GALERIA -->
     <section class="galeria" id="galeria">
-        <div class="contenido-seccion">
-            <div class="contenedor-titulo">
+        <div class="contenido-seccion container">
+            <div class="contenedor-titulo row text-center col-12">
                 <div class="numero">
                     04
                 </div>
@@ -174,25 +201,25 @@
                     <h2>GALERIA</h2>
                 </div>
             </div>
-            <div class="fila">
-                <div class="col">
+            <div class="fila row">
+                <div class="col col-md-4">
                     <img src="{% static 'core/img/G3.jpg'%}" alt="">
                 </div>
-                <div class="col">
+                <div class="col col-md-4">
                     <img src="{% static 'core/img/NW.jpg'%}" alt="">
                 </div>
-                <div class="col">
+                <div class="col col-md-4">
                     <img src="{% static 'core/img/G2.jpg'%}" alt="">
                 </div>
             </div>
-            <div class="fila">
-                <div class="col">
+            <div class="fila row">
+                <div class="col col-md-4">
                     <img src="{% static 'core/img/BUM.jpg'%}" alt="">
                 </div>
-                <div class="col">
+                <div class="col col-md-4">
                     <img src="{% static 'core/img/AR.jpg'%}" alt="">
                 </div>
-                <div class="col">
+                <div class="col col-md-4">
                     <img src="{% static 'core/img/RM.jpg'%}" alt="">
                 </div>
             </div>
@@ -202,8 +229,8 @@
 
     <!-- SECCION CONTACTO -->
     <section class="contacto" id="contacto">
-        <div class="contenido-seccion">
-            <div class="contenedor-titulo">
+        <div class="contenido-seccion container">
+            <div class="contenedor-titulo row col-lg-12">
                 <div class="numero">
                     06
                 </div>
@@ -212,47 +239,53 @@
                     <h2>CONTACTO</h2>
                 </div>
             </div>
-            <div class="fila">
-                <div class="col">
-                    <input type="text" placeholder="Ingrese Email">
+            <div class="fila row">
+                <div class="col col-lg-6 form-group">
+                    <input type="text" class="form-control" placeholder="Ingrese Email">
                 </div>
-                <div class="col">
-                    <input type="text" placeholder="Ingrese Nombre">
+                <div class="col col-lg-6 form-group">
+                    <input type="text" class="form-control" placeholder="Ingrese Nombre">
                 </div>
             </div>
-            <div class="mensaje">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Ingresa el Mensaje"></textarea>
-                <button>Enviar Mensaje</button>
+
+            <div class="mensaje col-lg-12">
+                <textarea class="form-control" rows="4" placeholder="Ingresa el Mensaje"></textarea>
             </div>
-            <div class="fila-datos">
-                <div class="col">
+            <div class="col-lg-12">
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </div>
+
+            <div class="fila-datos row">
+                <div class="dato col-lg-4">
                     <i class="fa-solid fa-location-dot"></i>
                     Blanco 1064, Quilpué, Valparaíso
                 </div>
-                <div class="col">
+                <div class="dato col-lg-4">
                     <i class="fa-solid fa-phone"></i>
                     +56 9 54296836
                 </div>
-                <div class="col">
+                <div class="dato col-lg-4">
                     <i class="fa-regular fa-clock"></i>
                     Lunes a Sábado, 8:00 am - 22:00 pm
                 </div>
             </div>
         </div>
-
     </section>
 
-    <footer>
-        <div class="info">
-            <p> Copyright © 2023-<span class="txtAmarillo">AllMightGym</span></p>
-            <div class="redes">
-                <a href="#">
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light">
+        <div class="info container row align-items-center">
+            <div class="col-md-6">
+                <p class="m-0">&copy; 2023-<span class="text-warning">AllMightGym</span></p>
+            </div>
+            <div class="redes col-md-6">
+                <a href="#" class="text-light me-3">
                     <i class="fa-brands fa-facebook-f"></i>
                 </a>
-                <a href="#">
+                <a href="#" class="text-light me-3">
                     <i class="fa-brands fa-twitter"></i>
                 </a>
-                <a href="#">
+                <a href="#" class="text-light">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>

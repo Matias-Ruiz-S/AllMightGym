@@ -9,6 +9,10 @@ html{
     scroll-behavior: smooth;
 }
 body{
+/*    overflow-x: hidden; */
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
     background-color: #fef8f8;
 }
 /* *********** */
@@ -122,6 +126,8 @@ body{
     color: #797e8e;
     margin: 0 20px;
 }
+
+  
 /* *********** */
 /* SECCION NOSOTROS */
 /* *********** */
@@ -259,6 +265,7 @@ body{
     margin: auto;
 }
 .servicios .info-servicios table{
+
     text-align: center;
     background-color: #fef8f8;
     color: #1f283e;
@@ -537,8 +544,104 @@ footer .info a{
         margin-bottom: 10px;
     }
 }
+@media only screen and (max-width: 768px) {
+    /* estilos para dispositivos móviles */
+    .contenedor-header {
+      padding: 0 10px;
+    }
+  
+    .contenedor-header header nav a {
+      display: block;
+      padding: 15px 0;
+      border-bottom: 1px solid #1f283e;
+    }
+  
+    .nav-responsive {
+      display: block;
+    }
+  
+    .inicio .info h2 {
+      font-size: 2.5rem;
+    }
+  
+    .inicio .info p {
+      font-size: 14px;
+    }
+  
+    .nosotros .fila {
+      flex-direction: column;
+    }
+  
+    .nosotros .fila .col {
+      width: 100%;
+      padding-top: 50px;
+      text-align: center;
+    }
+  
+    .nosotros .fila .col img {
+      width: 60%;
+      margin-bottom: 30px;
+    }
+  
+    .nosotros .fila-nosotros {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nosotros .fila-nosotros h2 {
+      font-size: 2rem;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+  }
 
-
+@media only screen and (max-width: 480px) {
+  /* Estilos para dispositivos móviles con pantallas pequeñas */
+  
+  .contenedor-header header{
+    padding: 10px 0;
+  }
+  
+  .contenedor-header header nav{
+    display: none;
+  }
+  
+  .nav-responsive{
+    display: inline-block;
+  }
+  
+  .inicio .info h2{
+    font-size: 3rem;
+  }
+  
+  .inicio .info p{
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  
+  .opciones{
+    bottom: 10px;
+  }
+  
+  .nosotros .fila{
+    flex-direction: column;
+  }
+  
+  .nosotros .fila .col{
+    width: 100%;
+    padding-top: 0;
+  }
+  
+  .nosotros .fila .col img{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .nosotros .fila-nosotros{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 /*Inicio de sesion y registro*/
 
 .login-register {
