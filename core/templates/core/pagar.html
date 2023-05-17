@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static%}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{% static 'core/img/favicon.ico'%}">
+    <title>membresia</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'core/css/style.css'%}">
+</head>
+
+<form action="{{ response.url }}" method="POST" >{% csrf_token %}
+        <input type="hidden" name="token_ws" value="{{response.token}}">
+        <input type="hidden" name="username" value="{{request.user.username}}">
+        <h3>Total final: </h3>
+        <h3>$ {{total}}</h3>
+        <input type="submit" value="Pagar">
+    </form>
+
+ 
+

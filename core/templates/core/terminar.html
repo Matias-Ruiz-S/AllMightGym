@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static%}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{% static 'core/img/favicon.ico'%}">
+    <title>membresia</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'core/css/style.css'%}">
+</head>
+
+<body>
+<div class="row center-xs rounded ">
+    <table class="table table-light table-striped col-xs-6 border rounded-lg">
+        <tr>
+        <td>Resultado autenticación : </td>
+        <td>{{response.vci}}</td>
+        </tr>
+        <tr>
+        <td>Monto : </td>
+        <td> {{ response.amount}}</td>
+        </tr>
+        <tr>
+        <td>Estado :</td>
+        <td> {{ response.status}}</td>
+        </tr>
+        <tr>
+        <td>Numero orden : </td>
+        <td> {{ response.buy_order}}</td>
+        </tr>
+        <tr>
+        <td>Numero sesión : </td>
+        <td> {{ response.session_id}}</td>
+        </tr>
+        <tr>
+        <td>Detalle tarjeta : </td>
+        <td> {{ response.card_detail}}</td>
+        </tr>
+        <tr>
+        <td>Fecha autorización : </td>
+        <td> {{ response.accounting_date}}</td>
+        </tr>
+        <tr>
+        <td>Fecha y hora autorización :</td>
+        <td> {{ response.transaction_date}}</td>
+        </tr>
+        <tr>
+        <td>Código autorización :</td>
+        <td> {{ response.authorization_code}}</td>
+        </tr>
+        <tr>
+        <td>Tipo de pago :</td>
+        <td> {{ response.payment_type_code}}</td>
+        </tr>
+        <tr>
+        <td>Código respuesta :</td>
+        <td> {{ response.response_code}}</td>
+        </tr>
+        <tr>
+        <td>Monto de las cuotas :</td>
+        <td> {{ response.installments_amount}}</td>
+        </tr>
+        <tr>
+        <td>Cantidad de cuotas : </td>
+        <td> {{ response.installments_number}}</td>
+    </table>
+    </div>
+</body>
+
+
