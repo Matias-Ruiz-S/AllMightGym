@@ -17,7 +17,7 @@ if (body.classList.contains('home')) {
         document.getElementById("nav").classList = "";
         menuVisible = false;
     }
-}   
+}
 
 if (body.classList.contains('login-register')) {
     console.log('login/register')
