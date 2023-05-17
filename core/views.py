@@ -5,3 +5,6 @@ def home(request):
 
 def login(request):    
     return render(request, 'core/login.html')
+
+def membresia(request):    
+    return render(request, 'core/membresia.html')

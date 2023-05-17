@@ -915,3 +915,54 @@ footer .info a{
     box-shadow: none;
     background-color: transparent;
 }
+
+
+
+
+.membresia .navbar {
+    background-color: #000000;
+    height: 100px;
+  }
+
+  .membresia  #navbarNavAltMarkup{
+  font-size: 20px;
+  background-color: #000000;
+ } 
+
+ .membresia .nav-brand{
+  border-spacing: 100px;
+  /*padding-left: (10px);*/
+}
+
+.membresia a {
+    color: #ffffff;
+  }
+
+
+
+  .membresia  .card {
+    width: 300px;
+    margin: 10px;
+  }
+  
+  .membresia .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+
+  .membresia  .btn {
+    background-color: #f9e401;
+    border: 1px solid #f9e401;
+    box-shadow: none;
+    transition: .3s;
+    color: #000000;
+    text-transform: unset;
+    font-size: 14px;
+}
+
+.membresia .btn:hover {
+    color: #f9e401;
+}
