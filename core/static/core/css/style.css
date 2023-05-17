@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400;600;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,10 +9,6 @@ html{
     scroll-behavior: smooth;
 }
 body{
-/*    overflow-x: hidden; */
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
     background-color: #fef8f8;
 }
 /* *********** */
@@ -126,17 +122,16 @@ body{
     color: #797e8e;
     margin: 0 20px;
 }
-
-  
 /* *********** */
 /* SECCION NOSOTROS */
 /* *********** */
+
 .nosotros{
     max-width: 1100px;
     margin: auto;
     height: 100vh;
     background-color: #fef8f8;
-    padding: 100px 20px;
+    padding: 2% 20px;
 }
 .nosotros .fila{
     display: flex;
@@ -154,7 +149,7 @@ body{
 }
 .nosotros .fila .col .contenedor-titulo{
     display: flex;
-    align-items:center;
+    align-items:center
 }
 .nosotros .fila .col .contenedor-titulo .numero{
     color: #f9e401;
@@ -217,7 +212,7 @@ body{
     background-size: cover;
     background-position: center center;
     margin: auto;
-    padding: 10% 20px;
+    padding: 0 20px;
 }
 .servicios .contenido-seccion .fila{
     max-width: 1100px;
@@ -231,7 +226,7 @@ body{
 }
 .servicios .contenido-seccion .fila .col img{
     display: block;
-    width: 95%;
+    width: 50%;
     margin: auto;
 }
 .servicios .fila .col .contenedor-titulo{
@@ -245,7 +240,6 @@ body{
     font-size: 5rem;
 }
 .servicios .fila .col .contenedor-titulo .info{
-    align-items: center;
     margin-left: 30px;
 }
 .servicios .fila .col .contenedor-titulo .info .frase{
@@ -266,7 +260,6 @@ body{
     margin: auto;
 }
 .servicios .info-servicios table{
-
     text-align: center;
     background-color: #fef8f8;
     color: #1f283e;
@@ -311,7 +304,6 @@ body{
     display: flex;
     align-items: center;
     margin-bottom: 40px;
-    padding-top: 2%;
 }
 .galeria  .contenedor-titulo .numero{
     color: #f9e401;
@@ -357,7 +349,6 @@ body{
     align-items: center;
     width: fit-content;
     margin: auto;
-
 }
 .contacto  .contenedor-titulo .numero{
     color: #f9e401;
@@ -462,7 +453,6 @@ footer .info a{
     }
     .nav-responsive{
         display: block;
-        font-size: 400%;
     }
     nav.responsive{
         display: flex;
@@ -485,13 +475,6 @@ footer .info a{
     .inicio .opciones{
         display: none;
     }
-    .nosotros{
-        max-width: 1100px;
-        margin: auto;
-        /* height: 100vh; */
-        background-color: #fef8f8;
-        padding: 100px 20px;
-    }
     .nosotros .fila{
         display: block;
     }
@@ -503,26 +486,6 @@ footer .info a{
         max-width: 200px;
         display: block;
         margin: auto;
-    }
-    .nosotros .fila .col .contenedor-titulo{
-        display: flex;
-        align-items:center;
-        flex-direction: column;
-    }
-
-    .contacto .contenedor-titulo{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .servicios .fila .col .contenedor-titulo {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .servicios .fila .col .contenedor-titulo .info{
-        align-items: center;
-  
     }
     .servicios .contenido-seccion .fila{
         display: block;
@@ -575,212 +538,7 @@ footer .info a{
         margin-bottom: 10px;
     }
 }
-@media only screen and (max-width: 768px) {
-    /* estilos para dispositivos móviles */
-    .contenedor-header {
-      padding: 0 10px;
-    }
-  
-    .contenedor-header header nav a {
-      display: block;
-      padding: 15px 0;
-      border-bottom: 1px solid #1f283e;
-    }
-  
-    .nav-responsive {
-      display: block;
-      font-size: 300%;
-    }
-  
-    .inicio .info h2 {
-      font-size: 2.5rem;
-    }
-  
-    .inicio .info p {
-      font-size: 14px;
-    }
-    .nosotros{
-      max-width: 1100px;
-      margin: auto;
-      /* height: 100vh; */
-      background-color: #fef8f8;
-      padding: 100px 20px;
-    }
-    .nosotros .fila {
-      flex-direction: column;
-    }
-  
-    .nosotros .fila .col {
-      width: 100%;
-      padding-top: 50px;
-      text-align: center;
-    }
-  
-    .nosotros .fila .col img {
-      width: 60%;
-      margin-bottom: 30px;
-    }
-    .nosotros .fila .col .contenedor-titulo{
-        display: flex;
-        align-items:center;
-        flex-direction: column;
-    }
-    .contacto .contenedor-titulo{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .servicios .fila .col .contenedor-titulo {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .nosotros .fila-nosotros {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .nosotros .fila-nosotros h2 {
-      font-size: 2rem;
-      margin-top: 30px;
-      margin-bottom: 20px;
-    }
-  }
 
-@media only screen and (max-width: 480px) {
-  /* Estilos para dispositivos móviles con pantallas pequeñas */
-  
-  .contenedor-header header{
-    padding: 10px 0;
-  }
-  
-  .nav-responsive{
-    display: block;
-    font-size: 300%;
-  }
-  
-  .inicio .info h2{
-    font-size: 3rem;
-  }
-  
-  .inicio .info p{
-    font-size: 14px;
-    letter-spacing: 1px;
-  }
-  
-  .opciones{
-    bottom: 10px;
-  }
-  .nosotros{
-    max-width: 1100px;
-    margin: auto;
-    height: 125vh;
-    background-color: #fef8f8;
-    padding: 100px 20px;
-}
-  .nosotros .fila{
-    flex-direction: column;
-  }
-  
-  .nosotros .fila .col{
-    width: 100%;
-    padding-top: 0;
-  }
-  .nosotros .fila .col .contenedor-titulo{
-    display: flex;
-    align-items:center;
-    flex-direction: column;
-}
-.contacto .contenedor-titulo{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.servicios .fila .col .contenedor-titulo {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-  .nosotros .fila .col img{
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  
-  .nosotros .fila-nosotros{
-    flex-direction: column;
-    /*align-items: flex-start;*/
-  }
-}
-@media only screen and (max-width: 375px) {
-    /* Estilos para dispositivos móviles con pantallas pequeñas */
-    
-    .contenedor-header header{
-        padding: 10px 0;
-      }
-
-      .nav-responsive{
-        display: block;
-        font-size: 300%;
-      }
-      
-      .inicio .info h2{
-        font-size: 3rem;
-      }
-      
-      .inicio .info p{
-        font-size: 14px;
-        letter-spacing: 1px;
-      }
-      
-      .opciones{
-        bottom: 10px;
-      }
-      .nosotros{
-        max-width: 1100px;
-        margin: auto;
-        height: 150vh;
-        background-color: #fef8f8;
-        padding: 100px 20px;
-    }
-      .nosotros .fila{
-        flex-direction: column;
-      }
-      
-      .nosotros .fila .col{
-        width: 100%;
-        padding-top: 0;
-      }
-      .nosotros .fila .col .contenedor-titulo{
-        display: flex;
-        align-items:center;
-        flex-direction: column;
-    }
-    .contacto .contenedor-titulo{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .servicios .fila .col .contenedor-titulo {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-      .nosotros .fila .col img{
-        width: 100%;
-        margin-bottom: 30px;
-      }
-      
-      .nosotros .fila-nosotros{
-        flex-direction: column;
-        /*align-items: flex-start;*/
-      }
-    }
-    .galeria .contenedor-titulo {
-        display: flex;
-        align-items: center;
-        margin-bottom: 40px;
-        padding-top: 10%;
-    }
 /*Inicio de sesion y registro*/
 
 .login-register {
@@ -940,8 +698,16 @@ footer .info a{
 
 
   .membresia  .card {
-    width: 300px;
+    width: 400px;
     margin: 10px;
+    transition: all 0.4s ease-in-out;
+  }
+
+
+  .membresia .card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 15px #0000004d; 
+    animation: animate__tada 0.5s; 
   }
   
   .membresia .container {
@@ -964,4 +730,19 @@ footer .info a{
 
 .membresia .btn:hover {
     color: #f9e401;
+}
+
+
+
+.dab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1050px;
+  }
+
+  .dab a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
